@@ -1,0 +1,94 @@
+{
+    "team": [
+        {
+            "id": 1804100,
+            "name": "Md Sajidul Mowla",
+            "role": "Web developer",
+            "bio": "Former web developer, currently exploring data science field and learning machine learning.",
+            "linkedin": "https://www.linkedin.com/in/sajid73",
+            "email": "smsajid7300@gmai.com",
+            "image": "https://i.ibb.co/WHsDZhd/sajid.jpg"
+        },
+        {
+            "id": 1804109,
+            "name": "Udoy Das",
+            "role": "Web developer & Algoritm Designer",
+            "bio": "Final year CS student dedicated to learning and building career on data science",
+            "linkedin": "https://www.linkedin.com/in/udoy-das-948356194",
+            "email": "u1804109@student.cuet.ac.bd",
+            "image": "https://i.ibb.co/NVgPZXc/udoy.jpg"
+        },
+        {
+            "id": 1804005,
+            "name": "Shaiball barua",
+            "role": "Team lead & System development",
+            "bio": "Developed the UI part",
+            "linkedin": "https://www.linkedin.com/in/shaiball-barua-099639190",
+            "email": "u1804005@student.cuet.ac.bd",
+            "image": "https://i.ibb.co/7KSLQmy/shaibal.jpg"
+        },
+        {
+            "id": 1804026,
+            "name": "Rakibul Hassan Khondokar",
+            "role": "Algorithm designer",
+            "bio": "I aspire to bring something new in the industry and I will keep trying according to my merit.",
+            "linkedin": "http://www.linkedin.com/in/rakib-khondokar-2535b4292",
+            "email": "u1804026@student.cuet.ac.bd",
+            "image": ""
+        },
+        {
+            "id": 1804128,
+            "name": "Md. Ayon Mia",
+            "role": "Algorithm designer",
+            "bio": "Fourth-year Computer Science & Engineering student passionate about machine learning, data science, and AI. Eager to apply knowledge and creativity to drive technological innovation. Actively seeking extracurricular activities to broaden skills and contribute to modern technology's success.",
+            "linkedin": "https://www.linkedin.com/in/md-ayon-rahman",
+            "email": "mdayonrahman100@gmail.com",
+            "image": ""
+        },
+        {
+            "id": 1804043,
+            "name": "Md. Al-Amin Khan",
+            "role": "Algorithm designer",
+            "bio": "An energetic worker looking for proper opportunity.",
+            "linkedin": "https://www.linkedin.com/in/al-amin-khan-372b16277/",
+            "email": "alaminkhan10009@gmail.com",
+            "image": "https://i.ibb.co/D17hzH5/alamin.jpg"
+        },
+        {
+            "id": 1804078,
+            "name": "Mehedi Hasan Jony",
+            "role": "Algorithm designer",
+            "bio": "I'm a fourth-year Computer Science & Engineering student passionate about modern technology. My focus is on data science and machine learning, as they offer innovative solutions to complex problems. Actively seeking extracurricular opportunities to enhance my skills and knowledge.",
+            "linkedin": "https://www.linkedin.com/in/mehedi-jony/",
+            "email": "mh.mehedi.563@gmail.com",
+            "image": "https://i.ibb.co/rZKDWsw/mehedi.jpg"
+        },
+        {
+            "id": 1804007,
+            "name": "Mahshar Yahan",
+            "role": "Algorithm designer",
+            "bio": "I'm a AI enthusiast who currently working with NLP and question-answering systems, especially for automating customer care services using LLM models. Team player, eager to learn and grow every day.",
+            "linkedin": "https://www.linkedin.com/in/mahshar-yahan-c1804007/",
+            "email": "yahanmahshar1@gmai.com",
+            "image": "https://i.ibb.co/KyyKm5N/yahan.jpg"
+        },
+        {
+            "id": 1804094,
+            "name": "Mohammad Fayez Ullah",
+            "role": "Development",
+            "bio": "Computer science final year student learning and trying to implement learned topics",
+            "linkedin": "https://www.linkedin.com/in/",
+            "email": "u1804094@student.cuet.ac.bd",
+            "image": "https://i.ibb.co/4FRw0BX/fayez.jpg"
+        },
+        {
+            "id": 1804050,
+            "name": "Nurullah Sany",
+            "role": "Development",
+            "bio": "Computer science final year student learning and trying to implement learned topics",
+            "linkedin": "http://www.linkedin.com/in/nurullahsany00",
+            "email": "u1804050@student.cuet.ac.bd",
+            "image": "https://i.ibb.co/gZCW2Hy/nurullah.jpg"
+        }
+    ]
+}
