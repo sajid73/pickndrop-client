@@ -1,18 +1,18 @@
 "use client"
 import axios from 'axios';
-import { redirect } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
 
 export default function Page() {
     const [formstate, setFormstate] = useState({});
     const [submitting, setSubmitting] = useState();
+    const router = useRouter()
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitting("pending");
         try {
             const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/vehicle/add`, formstate);
-            // console.log(res)
             setSubmitting("success");
         } catch (error) {
             setSubmitting("error");
@@ -21,7 +21,7 @@ export default function Page() {
             setSubmitting("");
         }, 5000);
         setInterval(() => {
-            redirect('/');
+            router.push('/');
         }, 2000);
     }
     return (

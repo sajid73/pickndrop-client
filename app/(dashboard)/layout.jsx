@@ -36,7 +36,7 @@ export default function DashboardLayout({ children }) {
                     </li>
                 </ul>
             </div>
-            <div className="text-right"><button className="bg-primary-800 text-white p-1 rounded-md" onClick={() => router.refresh()}>Refresh</button></div>
+            <div className="text-right"><button className="bg-primary-800 text-white p-1 rounded-md m-2" onClick={() => router.refresh()}>Refresh</button></div>
 
             {children}
         </section>
