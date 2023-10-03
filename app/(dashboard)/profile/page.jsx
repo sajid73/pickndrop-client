@@ -6,13 +6,18 @@ import React from 'react'
 
 export default function Page() {
     const router = useRouter();
-    const data = JSON.parse(localStorage.getItem('user'));
+    let data;
+    if (typeof window != undefined) {
+        data = JSON.parse(localStorage.getItem('user'));
+    }
     if (!data) {
         router.push("/signin");
     }
 
     const handleSignout = (e) => {
-        localStorage.clear();
+        if (typeof window != undefined) {
+            localStorage.clear();
+        }
         deleteCookie("token");
         router.push("/");
     }
