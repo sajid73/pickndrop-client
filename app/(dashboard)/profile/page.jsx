@@ -8,11 +8,7 @@ import { UserContext } from "../../layout_provider"
 export default function Page() {
     const router = useRouter();
     const [sharedData, setSharedData] = useContext(UserContext);
-    let data;
-    if (typeof window != undefined) {
-        data = JSON.parse(localStorage.getItem('user'));
-    }
-    if (!sharedData.user.name) {
+    if (!sharedsharedData.user.user.name) {
         router.push("/signin");
     }
 
@@ -33,7 +29,7 @@ export default function Page() {
                                         Name
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {data.name}
+                                        {sharedData.user.name}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -41,7 +37,7 @@ export default function Page() {
                                         Email
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {data.email}
+                                        {sharedData.user.email}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -49,7 +45,7 @@ export default function Page() {
                                         Role
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {data.role}
+                                        {sharedData.user.role}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -57,7 +53,7 @@ export default function Page() {
                                         Address
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {data.address}
+                                        {sharedData.user.address}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -65,7 +61,7 @@ export default function Page() {
                                         Arrival time
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {data.arrival}
+                                        {sharedData.user.arrival}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -73,7 +69,7 @@ export default function Page() {
                                         Departure time
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {data.departure}
+                                        {sharedData.user.departure}
                                     </td>
                                 </tr>
                             </tbody>
