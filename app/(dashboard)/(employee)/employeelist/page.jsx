@@ -37,21 +37,21 @@ export default async function Page() {
           </thead>
           <tbody>
             {
-              vehicles && vehicles.map((employee) => (<tr key={employee.id} className="odd:bg-white even:bg-gray-50 border-b odd:dark:bg-gray-900 even:evn:dark:bg-gray-800 odd:dark:border-gray-700 even:dark:border-gray-700">
+              vehicles && vehicles.map((employee) => (<tr key={employee?.id} className="odd:bg-white even:bg-gray-50 border-b odd:dark:bg-gray-900 even:evn:dark:bg-gray-800 odd:dark:border-gray-700 even:dark:border-gray-700">
                 <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  {employee.name}
+                  {employee?.name}
                 </td>
                 <td className="px-6 py-4">
-                  {employee.email}
+                  {employee?.email}
                 </td>
                 <td className="px-6 py-4">
-                  {employee.zone}
+                  {employee?.zone}
                 </td>
                 <td className="px-6 py-4">
-                  {employee.arrival}
+                  {employee?.arrival}
                 </td>
                 <td className="px-6 py-4">
-                  {employee.departure}
+                  {employee?.departure}
                 </td>
               </tr>))
             }

@@ -8,19 +8,19 @@ import { UserContext } from "../../layout_provider"
 export default function Page() {
     const router = useRouter();
     const [sharedData, setSharedData] = useContext(UserContext);
-    if (!sharedsharedData.user.user.name) {
-        router.push("/signin");
+    if (!sharedData.user.name) {
+        // router.push("/signin");
     }
 
     const handleSignout = (e) => {
         deleteCookie("token");
-        router.push("/");
+        // router.push("/");
     }
 
     return (
         <>
             {
-                data && <div className="sm:w-full md:w-2/3 lg:w-1/3 bg-slate-200 m-auto p-2 rounded-xl">
+                sharedData.user.name && <div className="sm:w-full md:w-2/3 lg:w-1/3 bg-slate-200 m-auto p-2 rounded-xl">
                     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                             <tbody>
@@ -29,7 +29,7 @@ export default function Page() {
                                         Name
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {sharedData.user.name}
+                                        {sharedData.user?.name}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -37,7 +37,7 @@ export default function Page() {
                                         Email
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {sharedData.user.email}
+                                        {sharedData.user?.email}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -45,7 +45,7 @@ export default function Page() {
                                         Role
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {sharedData.user.role}
+                                        {sharedData.user?.role}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -53,7 +53,7 @@ export default function Page() {
                                         Address
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {sharedData.user.address}
+                                        {sharedData.user?.address}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -61,7 +61,7 @@ export default function Page() {
                                         Arrival time
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {sharedData.user.arrival}
+                                        {sharedData.user?.arrival}
                                     </td>
                                 </tr>
                                 <tr className="border-b dark:border-gray-700">
@@ -69,7 +69,7 @@ export default function Page() {
                                         Departure time
                                     </th>
                                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                        {sharedData.user.departure}
+                                        {sharedData.user?.departure}
                                     </td>
                                 </tr>
                             </tbody>
