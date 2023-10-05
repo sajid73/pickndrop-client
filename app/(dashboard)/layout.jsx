@@ -29,9 +29,6 @@ export default function DashboardLayout({ children }) {
                         <Link href="/employeelist" className={`inline-block p-4 border-b-2 ${pathname == '/employeelist' ? active : disable}`}>Employee list</Link>
                     </li>
                     <li>
-                        <Link href="/nextdest" className={`inline-block p-4 border-b-2 ${pathname == '/nextdest' ? active : disable}`}>Next destination</Link>
-                    </li>
-                    <li>
                         <Link href="/assigned" className={`inline-block p-4 border-b-2 ${pathname == '/assigned' ? active : disable}`}>Assigned vehicle</Link>
                     </li>
                 </ul>

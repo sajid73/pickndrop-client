@@ -44,7 +44,7 @@ export default function Header() {
                             <Link href="/about" className={`block py-2 pl-3 pr-4 ${pathname == '/about' ? active : disable}`}>About us</Link>
                         </li>
                         <li>
-                            <Link href="/profile" className={`block py-2 pl-3 pr-4 ${pathname == ('/employelist' || '/addvehicle' || '/vehiclelist') ? active : disable}`}>Dashboard</Link>
+                            <Link href="/assigned" className={`block py-2 pl-3 pr-4 ${pathname == ('/employelist' || '/addvehicle' || '/vehiclelist') ? active : disable}`}>Dashboard</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,9 +1,9 @@
+import { employeeList } from '@/app/(apis)/api';
 import React from 'react'
 
 export const revalidate = 1;
 const fetchPosts = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND}/user`);
-  const data = await response.json();
+  const data = await employeeList();
   return data.employee;
 };
 
@@ -25,7 +25,7 @@ export default async function Page() {
                 Email
               </th>
               <th scope="col" className="px-6 py-3">
-                Address
+                Zone
               </th>
               <th scope="col" className="px-6 py-3">
                 Arrival
@@ -45,7 +45,7 @@ export default async function Page() {
                   {employee.email}
                 </td>
                 <td className="px-6 py-4">
-                  {employee.address}
+                  {employee.zone}
                 </td>
                 <td className="px-6 py-4">
                   {employee.arrival}

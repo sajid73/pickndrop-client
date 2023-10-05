@@ -1,6 +1,10 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { createContext } from 'react';
 
+const SidebarContext = createContext();
 
 export default function Home() {
   return (
@@ -22,7 +26,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </main>
   )
 }

@@ -1,5 +1,5 @@
 "use client"
-import axios from 'axios';
+import { registerUser } from '@/app/(apis)/api';
 import React, { useState } from 'react'
 
 function customalert(color, msg) {
@@ -16,7 +16,7 @@ function customalert(color, msg) {
 
 export default function Page() {
     const [formstate, setFormstate] = useState({
-        address: "",
+        zone: "",
         arrival: "",
         departure: "",
         email: "",
@@ -29,16 +29,16 @@ export default function Page() {
         setSubmitting("pending");
         // console.log(formstate);
         try {
-            const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/user/signup`, formstate);
+            const res = await registerUser(formstate);
             // console.log(res)
             setSubmitting("success");
             setFormstate({
-                address: "",
                 arrival: "",
                 departure: "",
                 email: "",
                 name: "",
-                password: ""
+                password: "",
+                zone: ""
             })
         } catch (error) {
             setSubmitting("error");
@@ -67,8 +67,8 @@ export default function Page() {
                             <input type="password" name="password" id="password" value={formstate.password} onChange={(e) => setFormstate({ ...formstate, password: e.target.value })} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Password for employee id" required="Password is required" />
                         </div>
                         <div className="sm:col-span-2">
-                            <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your zone:</label>
-                            <select id="address" defaultValue="" onChange={(e) => setFormstate({ ...formstate, address: e.target.value })} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <label for="zone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your zone:</label>
+                            <select id="zone" defaultValue="" onChange={(e) => setFormstate({ ...formstate, zone: e.target.value })} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option value="" className="text-grey">None</option>
                                 <option value="north">North</option>
                                 <option value="south">South</option>

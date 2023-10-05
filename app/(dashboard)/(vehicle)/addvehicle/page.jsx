@@ -1,5 +1,5 @@
 "use client"
-import axios from 'axios';
+import { addVehicle } from '@/app/(apis)/api';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
@@ -12,7 +12,7 @@ export default function Page() {
         e.preventDefault();
         setSubmitting("pending");
         try {
-            const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/vehicle/add`, formstate);
+            const res = await addVehicle(formstate);
             setSubmitting("success");
         } catch (error) {
             setSubmitting("error");

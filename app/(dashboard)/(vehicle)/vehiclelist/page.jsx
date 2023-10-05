@@ -1,9 +1,8 @@
+import { vehicleList } from '@/app/(apis)/api';
 import React from 'react'
 
 const fetchPosts = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND}/vehicle`);
-  const data = await response.json();
-  // console.log(data.vehicles)
+  const data = await vehicleList();
   return data.vehicles;
 };
 
