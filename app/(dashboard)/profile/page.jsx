@@ -2,22 +2,21 @@
 import { deleteCookie } from 'cookies-next';
 import { Button } from 'flowbite-react';
 import { useRouter } from 'next/navigation';
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from "../../layout_provider"
 
 export default function Page() {
     const router = useRouter();
+    const [sharedData, setSharedData] = useContext(UserContext);
     let data;
     if (typeof window != undefined) {
         data = JSON.parse(localStorage.getItem('user'));
     }
-    if (!data) {
+    if (!sharedData.user.name) {
         router.push("/signin");
     }
 
     const handleSignout = (e) => {
-        if (typeof window != undefined) {
-            localStorage.clear();
-        }
         deleteCookie("token");
         router.push("/");
     }

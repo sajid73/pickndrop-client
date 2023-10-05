@@ -1,12 +1,14 @@
 "use client"
 import axios from 'axios';
-import { setCookie } from "cookies-next";
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useRouter } from 'next/navigation';
+import { UserContext } from '@/app/layout_provider';
+import { setCookie } from 'cookies-next';
 
 export default function Page() {
     const [inputs, setInputs] = useState({});
     const [submitting, setSubmitting] = useState();
+    const [sharedData, setSharedData] = useContext(UserContext);
 
     const router = useRouter();
 
@@ -23,10 +25,11 @@ export default function Page() {
             setSubmitting("success");
             console.log("success");
             setCookie("token", res.data.token);
-            localStorage.setItem("user", JSON.stringify(res.data.user));
+            // localStorage.setItem("user", JSON.stringify(res.data.user));
+            setSharedData({ ...sharedData, user: res.data.user });
             router.back()
         } catch (error) {
-            setSubmitting("error");
+            setSubmitting("error")
             console.log(error);
         }
     }
