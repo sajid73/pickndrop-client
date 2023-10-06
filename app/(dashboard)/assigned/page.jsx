@@ -9,16 +9,6 @@ export default function Page() {
     const res = await calculatePath()
     if (res) {
       setResult(res)
-      // console.log(res)
-      for (const key in res) {
-        console.log(key)
-      }
-    }
-  }
-
-  const explore = (obj) => {
-    for (const key in obj) {
-      return <h1>{key}</h1>
     }
   }
 
