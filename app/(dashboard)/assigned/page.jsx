@@ -27,9 +27,9 @@ export default function Page() {
   }, [])
 
   return (
-    <div>
+    <div className='lg:w-1/2 mx-auto'>
       <h1 className="font-bold text-3xl text-center">Assigned vehicles</h1>
-      <div>
+      <div className='w-5/6 mx-auto'>
         {
           result ? (<div>
             {Object.keys(result).map((key, index) => {
