@@ -55,15 +55,6 @@
             "image": "https://i.ibb.co/D17hzH5/alamin.jpg"
         },
         {
-            "id": 1804078,
-            "name": "Mehedi Hasan Jony",
-            "role": "Algorithm designer",
-            "bio": "I'm a fourth-year Computer Science & Engineering student passionate about modern technology. My focus is on data science and machine learning, as they offer innovative solutions to complex problems. Actively seeking extracurricular opportunities to enhance my skills and knowledge.",
-            "linkedin": "https://www.linkedin.com/in/mehedi-jony/",
-            "email": "mh.mehedi.563@gmail.com",
-            "image": "https://i.ibb.co/rZKDWsw/mehedi.jpg"
-        },
-        {
             "id": 1804007,
             "name": "Mahshar Yahan",
             "role": "Algorithm designer",
@@ -71,6 +62,15 @@
             "linkedin": "https://www.linkedin.com/in/mahshar-yahan-c1804007/",
             "email": "yahanmahshar1@gmai.com",
             "image": "https://i.ibb.co/KyyKm5N/yahan.jpg"
+        },
+        {
+            "id": 1804050,
+            "name": "Nurullah Sany",
+            "role": "Algorithm designer",
+            "bio": "Computer science final year student learning and trying to implement learned topics",
+            "linkedin": "http://www.linkedin.com/in/nurullahsany00",
+            "email": "u1804050@student.cuet.ac.bd",
+            "image": "https://i.ibb.co/gZCW2Hy/nurullah.jpg"
         },
         {
             "id": 1804094,
@@ -82,13 +82,13 @@
             "image": "https://i.ibb.co/4FRw0BX/fayez.jpg"
         },
         {
-            "id": 1804050,
-            "name": "Nurullah Sany",
-            "role": "Development",
-            "bio": "Computer science final year student learning and trying to implement learned topics",
-            "linkedin": "http://www.linkedin.com/in/nurullahsany00",
-            "email": "u1804050@student.cuet.ac.bd",
-            "image": "https://i.ibb.co/gZCW2Hy/nurullah.jpg"
+            "id": 1804078,
+            "name": "Mehedi Hasan Jony",
+            "role": "Algorithm designer",
+            "bio": "I'm a fourth-year Computer Science & Engineering student passionate about modern technology. My focus is on data science and machine learning, as they offer innovative solutions to complex problems. Actively seeking extracurricular opportunities to enhance my skills and knowledge.",
+            "linkedin": "https://www.linkedin.com/in/mehedi-jony/",
+            "email": "mh.mehedi.563@gmail.com",
+            "image": "https://i.ibb.co/rZKDWsw/mehedi.jpg"
         }
     ]
 }
